@@ -137,64 +137,77 @@
 
     <!-- Offers Section -->
     <!-- Offers & Loyalty Section -->
-    <section id="offers" class="py-20 bg-slate-900 text-white overflow-hidden relative">
-        <div class="container mx-auto px-6 text-center">
-            
-            <!-- Headline -->
-            <h2 class="serif text-4xl md:text-6xl mb-4">Premium Style, <span class="text-gold">Better Prices</span></h2>
-            <p class="text-lg md:text-xl text-slate-300 mb-12 max-w-2xl mx-auto">
-                Whether you are buying one suit or 100, we offer the best deals in Delhi for both single shoppers and wholesale business owners.
+    <!-- Offers & Loyalty Section -->
+<section id="offers" class="py-24 bg-slate-900 text-white overflow-hidden relative">
+    <div class="container mx-auto px-6 relative z-10">
+        
+        <!-- Section Header -->
+        <div class="text-center mb-16">
+            <h2 class="serif text-4xl md:text-6xl mb-6">Premium Style, <span class="text-gold">Better Prices</span></h2>
+            <p class="text-slate-400 max-w-2xl mx-auto text-lg leading-relaxed">
+                Whether you are buying one suit or a hundred, we offer Delhi's most competitive rates for both retail customers and business partners.
             </p>
+        </div>
 
-            <!-- Loyalty Points Box -->
-            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-                
-                <!-- Loyalty Points Info -->
-                <div class="bg-slate-800/50 p-8 rounded-2xl border border-gold/30 flex flex-col items-center justify-center">
-                    <div class="w-16 h-16 bg-gold rounded-full flex items-center justify-center mb-4 shadow-lg">
-                        <i class="fas fa-gift text-slate-900 text-2xl"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-3">Earn Loyalty Points</h3>
-                    <p class="text-slate-400">
-                        Shop with us today and earn points on every purchase. Use these points as a <span class="text-white font-bold underline">Cash Discount</span> on your next visit!
-                    </p>
-                    <span class="mt-4 text-xs uppercase tracking-widest text-gold font-bold">Buy More • Save More</span>
+        <!-- Cards Grid -->
+        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
+            
+            <!-- Loyalty Card -->
+            <div class="group bg-white/5 backdrop-blur-sm p-10 rounded-3xl border border-white/10 hover:border-gold/50 transition-all duration-500 shadow-2xl">
+                <div class="w-14 h-14 bg-gold rounded-2xl flex items-center justify-center mb-8 shadow-[0_0_20px_rgba(212,175,55,0.3)] group-hover:scale-110 transition-transform">
+                    <i class="fas fa-gift text-slate-900 text-2xl"></i>
                 </div>
-
-                <!-- Wholesale Deal Info -->
-                <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 flex flex-col items-center justify-center">
-                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-4 shadow-lg">
-                        <i class="fas fa-tags text-slate-900 text-2xl"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-3">Wholesale Rates</h3>
-                    <p class="text-slate-400">
-                        Running a shop? Get our premium collection at factory prices. We offer special low rates for bulk orders and business partners.
-                    </p>
-                    <span class="mt-4 text-xs uppercase tracking-widest text-slate-300 font-bold">Delhi's Trusted Supplier</span>
+                <h3 class="text-2xl font-bold mb-4">Earn Loyalty Points</h3>
+                <p class="text-slate-400 mb-6 leading-relaxed">
+                     Shop with us today and earn points on every purchase. Use these points as a <span class="text-white font-bold underline">Cash Discount</span> on your next visit!
+                </p>
+                <div class="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-gold font-black">
+                    <span class="w-2 h-2 rounded-full bg-gold animate-pulse"></span>
+                    Buy More • Save More
                 </div>
-
             </div>
 
-            <!-- WhatsApp Enquiry Button -->
-            <div class="flex flex-col items-center">
-                <p class="mb-6 text-slate-300 italic font-medium">Interested in a design? Ask us for the price on WhatsApp:</p>
-                
-                <a href="https://wa.me/919310480772?text=Hello%20Golden%20Tree%20Garments,%20I%20want%20to%20know%20more%20about%20your%20offers%20and%20latest%20prices." 
-                   target="_blank" 
-                   class="inline-flex items-center gap-4 bg-[#25D366] hover:bg-[#20ba5a] text-white px-10 py-5 rounded-full font-bold text-lg transition-all shadow-2xl hover:scale-105 active:scale-95">
-                    <i class="fab fa-whatsapp text-3xl"></i>
-                    <span>GET PRICE ENQUIRY NOW</span>
-                </a>
-                
-                <!-- <p class="mt-4 text-sm text-slate-500">Fast response • Available 10 AM to 8 PM</p> -->
+            <!-- Wholesale Card -->
+            <div class="group bg-white/5 backdrop-blur-sm p-10 rounded-3xl border border-white/10 hover:border-white/30 transition-all duration-500 shadow-2xl text-white">
+                <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-8 shadow-[0_0_20px_rgba(255,255,255,0.1)] group-hover:scale-110 transition-transform">
+                    <i class="fas fa-tags text-slate-900 text-2xl"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Wholesale Rates</h3>
+                <p class="text-slate-400 mb-6 leading-relaxed">
+                 Running a shop? Get our premium collection at factory prices. We offer special low rates for bulk orders and business partners.
+                </p>
+                <div class="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-slate-300 font-black">
+                    <span class="w-2 h-2 rounded-full bg-white"></span>
+                    Delhi's Trusted Supplier
+                </div>
             </div>
 
         </div>
 
-        <!-- Decorative background elements -->
-        <div class="absolute top-0 left-0 w-64 h-64 bg-gold/5 rounded-full -translate-x-1/2 -translate-y-1/2 blur-3xl"></div>
-        <div class="absolute bottom-0 right-0 w-96 h-96 bg-gold/5 rounded-full translate-x-1/3 translate-y-1/3 blur-3xl"></div>
-    </section>
+        <!-- WhatsApp Call to Action -->
+        <div class="text-center">
+            <div class="inline-block p-1 rounded-full bg-white/5 mb-6">
+                <p class="px-4 py-1 text-sm text-slate-300 italic">Interested in a design? Ask for the latest price:</p>
+            </div>
+            
+            <div class="flex justify-center">
+                <a href="https://wa.me/919310480772?text=Hello%20Golden%20Tree%20Garments,%20I%20want%20to%20know%20more%20about%20your%20offers%20and%20latest%20prices." 
+                   target="_blank" 
+                   class="group flex items-center gap-3 bg-[#25D366] hover:bg-[#20ba5a] text-white px-8 py-3.5 rounded-full font-bold text-base transition-all duration-300 shadow-[0_10px_30px_rgba(37,211,102,0.3)] hover:shadow-[0_15px_40px_rgba(37,211,102,0.4)] hover:-translate-y-1">
+                    <i class="fab fa-whatsapp text-2xl"></i>
+                    <span class="tracking-wide uppercase text-sm">Get Price Enquiry Now</span>
+                </a>
+            </div>
+            
+            <!-- <p class="mt-6 text-[10px] uppercase tracking-[0.2em] text-slate-500 font-bold">Fast Response • Available 10 AM - 8 PM</p> -->
+        </div>
+
+    </div>
+
+    <!-- Background Decoration Elements -->
+    <div class="absolute top-0 left-0 w-[500px] h-[500px] bg-gold/10 rounded-full -translate-x-1/2 -translate-y-1/2 blur-[120px] pointer-events-none"></div>
+    <div class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-blue-500/5 rounded-full translate-x-1/3 translate-y-1/3 blur-[120px] pointer-events-none"></div>
+</section>
 
     <!-- About Section / Milestone -->
     <section id="about" class="py-24 bg-gray-50">
@@ -212,12 +225,12 @@
                 <span class="text-gold font-bold uppercase text-xs tracking-widest mb-4 block">A Journey of Style</span>
                 <h2 class="serif text-5xl mb-8 leading-tight">Celebrating 6 Years <br>on 10th April 2026</h2>
                 <p class="text-slate-700 text-lg mb-6 leading-relaxed">
-    We have some great news! <strong>Golden Tree Garments has just completed 6 successful years</strong> on 10th April 2026. Since we started our journey in 2020, we have worked hard to become Delhi’s favorite place for men who want to look their best.
-</p>
+                    We have some great news! <strong>Golden Tree Garments has just completed 6 successful years</strong> on 10th April 2026. Since we started our journey in 2020, we have worked hard to become Delhi’s favorite place for men who want to look their best.
+                </p>
 
-<p class="text-slate-700 text-lg mb-8 leading-relaxed">
-    Over the last 6 years, we have helped thousands of customers find the perfect outfit for weddings, important office meetings, and special parties. We are proud to provide high-quality fashion that fits perfectly and stays within your budget.
-</p>
+                <p class="text-slate-700 text-lg mb-8 leading-relaxed">
+                    Over the last 6 years, we have helped thousands of customers find the perfect outfit for weddings, important office meetings, and special parties. We are proud to provide high-quality fashion that fits perfectly and stays within your budget.
+                </p>
                 <p class="text-slate-600 text-lg mb-8 leading-relaxed">
                     Our commitment remains the same: high-quality fabrics, impeccable tailoring, and a personal touch that makes every customer feel like royalty.
                 </p>
@@ -230,45 +243,94 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-slate-950 text-white pt-20 pb-10 border-t-2 border-gold/30">
-        <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 mb-16">
-                <!-- Brand Info -->
-                <div>
-                    <h3 class="serif text-3xl mb-6 font-bold">GOLDEN <span class="text-gold">TREE</span></h3>
-                    <p class="text-slate-400 mb-8 max-w-md leading-relaxed">Delhi's premier clothing atelier. We specialize in high-quality Blazers, Sherwanis, Suits, and Indo-Western attire for the modern man.</p>
-                    <div class="flex space-x-6">
-                        <a href="https://www.facebook.com/GoldenTreeGarments/" class="text-slate-400 hover:text-gold text-2xl transition"><i class="fab fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/goldentree_garments/" class="text-slate-400 hover:text-gold text-2xl transition"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-
-                <!-- Contact Info (Address triggers Map) -->
-                <div>
-                    <h4 class="font-bold uppercase tracking-widest text-sm mb-8 text-gold">Visit Our Store</h4>
-                    <div class="space-y-6">
-                        <a href="https://www.google.com/maps/place/Golden+Tree+Garments+-+Men%E2%80%99s+Clothing+Shop+%26+Coat+Pant,+Blazer+For+Men/@28.657421,77.2727203,21z/data=!4m6!3m5!1s0x390cfd3321fe2743:0xe98c382c1fa3dc76!8m2!3d28.6573924!4d77.2728699!16s%2Fg%2F11lfk_s9gw?entry=ttu&g_ep=EgoyMDI2MDQwOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="flex items-start gap-4 group">
-                            <i class="fas fa-map-marker-alt mt-1 text-gold group-hover:scale-110 transition"></i>
-                            <span class="text-slate-400 group-hover:text-white transition leading-relaxed">
-                                <strong class="text-white block mb-1 uppercase text-xs tracking-widest">Main Address</strong>
-                                Plot No 447, Jheel Khureja,<br>
-                                Near Tanga Stand, Delhi 110051
-                                <span class="block mt-2 text-gold underline text-xs">Click to view on Google Maps</span>
-                            </span>
-                        </a>
-                        <a href="tel:09310480772" class="flex items-center gap-4 group">
-                            <i class="fas fa-phone-alt text-gold group-hover:scale-110 transition"></i>
-                            <span class="text-2xl font-bold group-hover:text-gold transition tracking-tighter">093104 80772</span>
-                        </a>
-                    </div>
+    <!-- Footer -->
+<footer class="bg-slate-950 text-white pt-20 pb-10 border-t-2 border-gold/30 overflow-hidden">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 mb-16">
+            <!-- Brand Info -->
+            <div>
+                <h3 class="serif text-3xl mb-6 font-bold">GOLDEN <span class="text-gold">TREE</span></h3>
+                <p class="text-slate-400 mb-8 max-w-md leading-relaxed">Delhi's premier clothing atelier. We specialize in high-quality Blazers, Sherwanis, Suits, and Indo-Western attire for the modern man.</p>
+                <div class="flex space-x-6">
+                    <a href="https://www.facebook.com/GoldenTreeGarments/" class="text-slate-400 hover:text-gold text-2xl transition"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/goldentree_garments/" class="text-slate-400 hover:text-gold text-2xl transition"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
-            
-            <div class="border-t border-slate-900 pt-8 text-center">
-                <p class="text-slate-500 text-xs uppercase tracking-widest">&copy; 2026 Golden Tree Garments. All Rights Reserved.</p>
+
+            <!-- Contact Info -->
+            <div>
+                <h4 class="font-bold uppercase tracking-widest text-sm mb-8 text-gold">Visit Our Store</h4>
+                <div class="space-y-6">
+                    <a href="https://www.google.com/maps/place/Golden+Tree+Garments+-+Men%E2%80%99s+Clothing+Shop+%26+Coat+Pant,+Blazer+For+Men/@28.657421,77.2727203,21z/data=!4m6!3m5!1s0x390cfd3321fe2743:0xe98c382c1fa3dc76!8m2!3d28.6573924!4d77.2728699!16s%2Fg%2F11lfk_s9gw?entry=ttu&g_ep=EgoyMDI2MDQwOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="flex items-start gap-4 group">
+                        <i class="fas fa-map-marker-alt mt-1 text-gold group-hover:scale-110 transition"></i>
+                        <span class="text-slate-400 group-hover:text-white transition leading-relaxed">
+                            <strong class="text-white block mb-1 uppercase text-xs tracking-widest">Main Address</strong>
+                            Plot No 447, Jheel Khureja,<br>
+                            Near Tanga Stand, Delhi 110051
+                            <span class="block mt-2 text-gold underline text-xs">Click to view on Google Maps</span>
+                        </span>
+                    </a>
+                    <a href="tel:09310480772" class="flex items-center gap-4 group">
+                        <i class="fas fa-phone-alt text-gold group-hover:scale-110 transition"></i>
+                        <span class="text-2xl font-bold group-hover:text-gold transition tracking-tighter">093104 80772</span>
+                    </a>
+                </div>
             </div>
         </div>
-    </footer>
+
+        <!-- Digital E-Card Section -->
+        <div class="flex flex-col items-center py-10 border-t border-slate-900">
+            <p class="text-[10px] uppercase tracking-[0.4em] text-slate-500 mb-4">Quick Connect Identity</p>
+            <button onclick="openCardModal()" class="group flex items-center gap-3 border border-gold/40 hover:border-gold px-8 py-3 rounded-full transition-all duration-500 shadow-lg bg-transparent">
+                <span class="w-2 h-2 rounded-full bg-gold animate-pulse"></span>
+                <span class="text-gold font-bold uppercase text-[11px] tracking-[0.2em] group-hover:tracking-[0.3em] transition-all">View Digital E-Card</span>
+                <i class="fas fa-id-badge text-gold group-hover:rotate-12 transition-transform"></i>
+            </button>
+        </div>
+        
+        <!-- Updated Copyright Section -->
+        <div class="pt-8 text-center">
+            <p class="text-slate-600 text-[10px] uppercase tracking-widest">
+                &copy; 2026 Golden Tree Garments. All Rights Reserved By Krishna Dua
+            </p>
+        </div>
+    </div>
+</footer>
+
+<div id="digitalCardModal" class="fixed inset-0 z-[100] hidden flex items-center justify-center bg-slate-950/95 backdrop-blur-md p-4 overflow-hidden">
+    <!-- Close Button - Styled with Gold/White contrast -->
+    <button onclick="closeCardModal()" class="fixed top-6 right-6 z-[120] bg-gold hover:bg-white text-slate-950 w-12 h-12 rounded-full flex items-center justify-center shadow-2xl transition-all duration-300 hover:scale-110">
+        <i class="fas fa-times text-xl"></i>
+    </button>
+
+    <div class="relative w-full max-w-2xl flex items-center justify-center animate-in fade-in zoom-in duration-300">
+        <!-- Iframe to load Digital.html - scrolling="no" removes the "arrow/bars" -->
+        <iframe src="Digital.html" scrolling="no" class="w-full h-[90vh] md:h-[600px] border-none overflow-hidden rounded-3xl shadow-[0_0_60px_rgba(212,175,55,0.3)]"></iframe>
+    </div>
+</div>
+
+<!-- POPUP SCRIPT -->
+<script>
+    function openCardModal() {
+        const modal = document.getElementById('digitalCardModal');
+        modal.classList.remove('hidden');
+        document.body.style.overflow = 'hidden'; // Stop background scrolling
+    }
+
+    function closeCardModal() {
+        const modal = document.getElementById('digitalCardModal');
+        modal.classList.add('hidden');
+        document.body.style.overflow = 'auto'; // Re-enable background scrolling
+    }
+
+    // Close on background click
+    window.onclick = function(event) {
+        const modal = document.getElementById('digitalCardModal');
+        if (event.target == modal) {
+            closeCardModal();
+        }
+    }
+</script>
 
 </body>
 </html>
