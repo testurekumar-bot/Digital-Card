@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Golden Tree Garments - Premium Men's Fashion. Blazers, Suits, and Sherwanis in Delhi.">
+    <title>Golden Tree Garments | Premium Men's Excellence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .serif { font-family: 'Playfair Display', serif; }
+        .gold-gradient { background: linear-gradient(135deg, #D4AF37 0%, #F2D472 50%, #B8860B 100%); }
+        .text-gold { color: #D4AF37; }
+        .bg-gold { background-color: #D4AF37; }
+    </style>
+</head>
+<body class="bg-white text-slate-900">
+
+    <!-- Navigation -->
+    <!-- Navigation Bar -->
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md shadow-sm border-b">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            
+            <!-- LEFT SIDE: Logo and Brand Name Grouped Together -->
+            <div class="flex items-center gap-3">
+                <!-- Logo appears first -->
+                <img src="logo.jpg" alt="Golden Tree Logo" class="h-12 w-12 rounded-full border border-gray-100 shadow-sm object-cover" onerror="this.src='https://via.placeholder.com/50'">
+                
+                <!-- Brand Name appears second -->
+                <a href="#" class="serif text-2xl font-bold tracking-tighter uppercase">
+                    GOLDEN <span class="text-gold">TREE</span>
+                </a>
+            </div>
+
+            <!-- RIGHT SIDE: Navigation Links -->
+            <div class="flex items-center">
+                <ul class="hidden md:flex space-x-8 font-bold text-xs uppercase tracking-widest">
+               
+                    <!-- <li>
+                        <a href="#collection" class="text-slate-700 hover:text-gold transition-colors duration-300">Collection</a>
+                    </li>
+   
+                    <li>
+                        <a href="#offers" class="text-slate-700 hover:text-gold transition-colors duration-300">Special Offers</a>
+                    </li>
+
+                    <li>
+                        <a href="#about" class="text-slate-700 hover:text-gold transition-colors duration-300">Our Milestone</a>
+                    </li> -->
+                </ul>
+
+                <!-- Mobile Menu Icon (Visible only on small screens) -->
+                <div class="md:hidden text-2xl text-slate-800">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <!-- Hero Section -->
+    <header class="relative h-screen flex items-center justify-center overflow-hidden">
+        <!-- Dark overlay to make the text easy to read -->
+        <div class="absolute inset-0 bg-slate-950/40 z-10"></div>
+        
+        <!-- Your main high-quality image -->
+        <img src="img1.jpg" class="absolute inset-0 w-full h-full object-cover object-top" alt="Golden Tree Best Suits">
+
+        <div class="relative z-20 text-center text-white px-4 max-w-4xl">
+            <!-- Simple, Trust-Building Tagline -->
+            <span class="text-gold font-bold uppercase tracking-[0.3em] text-xs md:text-sm mb-4 block">Delhi's Favorite Store for Men's Style</span>
+            
+            <!-- Main Heading: Strong and Easy to understand -->
+            <h1 class="serif text-5xl md:text-8xl mb-6 drop-shadow-2xl leading-tight">
+                Look Sharp. <br>Feel <span class="text-gold">Confident.</span>
+            </h1>
+            
+            <!-- Sub-heading: Explains exactly what you offer -->
+            <p class="text-lg md:text-2xl font-light mb-10 opacity-95 max-w-2xl mx-auto">
+                Get the perfect Suit, Blazer, or Sherwani for your wedding or office—made with premium fabric and a great fit.
+            </p>
+            
+            <!-- Action Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="https://photos.app.goo.gl/FETyNZb3XJ3NZrKo9" class="gold-gradient text-white px-10 py-4 rounded-full font-bold uppercase text-xs tracking-widest hover:scale-105 transition-transform inline-block shadow-2xl" target="_blank">
+                    See Our Collection
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Product Overview Section (img1, img2, img3) -->
+    <section id="collection" class="py-24 bg-white">
+        <div class="container mx-auto px-6 text-center mb-20">
+            <h2 class="serif text-5xl mb-4">The Golden Tree Aesthetic</h2>
+            <div class="h-1 w-24 bg-gold mx-auto mb-6"></div>
+            <p class="text-slate-500 max-w-2xl mx-auto">Explore our signature garments, where traditional craftsmanship meets modern silhouettes.</p>
+        </div>
+
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <!-- Image 1 Description -->
+                <div class="flex flex-col">
+                    <div class="overflow-hidden rounded-2xl shadow-2xl mb-6 aspect-[3/4]">
+                        <img src="img1.jpg" alt="Ivory Pinstripe Suit" class="w-full h-full object-cover hover:scale-105 transition duration-700">
+                    </div>
+                    <h3 class="serif text-2xl mb-2">The Ceremonial Ivory</h3>
+                    <p class="text-gold font-bold uppercase text-xs tracking-widest mb-4">Premium Wedding Wear</p>
+                    <p class="text-slate-600 leading-relaxed">Our flagship double-breasted pinstripe suit, as seen in <span class="font-semibold italic">White Pinstripe Double-Breasted Suit</span>, redefines luxury. Perfect for grooms and high-profile celebrations, this piece offers a crisp, powerful silhouette in an elegant off-white finish.</p>
+                </div>
+
+                <!-- Image 2 Description -->
+                <div class="flex flex-col">
+                    <div class="overflow-hidden rounded-2xl shadow-2xl mb-6 aspect-[3/4]">
+                        <img src="img2.jpg" alt="Slate Executive Suit" class="w-full h-full object-cover hover:scale-105 transition duration-700">
+                    </div>
+                    <h3 class="serif text-2xl mb-2">The Executive Slate</h3>
+                    <p class="text-gold font-bold uppercase text-xs tracking-widest mb-4">Corporate Excellence</p>
+                    <p class="text-slate-600 leading-relaxed">Shown in <span class="font-semibold italic">Slate Grey Double-Breasted Suit</span>, this double-breasted grey suit is the choice for the modern professional. Meticulously fitted to command respect in the boardroom while ensuring maximum comfort through premium fabric.</p>
+                </div>
+
+                <!-- Image 3 Description -->
+                <div class="flex flex-col">
+                    <div class="overflow-hidden rounded-2xl shadow-2xl mb-6 aspect-[3/4]">
+                        <img src="img3.png" alt="Urban Earth Blazer" class="w-full h-full object-cover hover:scale-105 transition duration-700">
+                    </div>
+                    <h3 class="serif text-2xl mb-2">The Urban Earth-Tone</h3>
+                    <p class="text-gold font-bold uppercase text-xs tracking-widest mb-4">Smart-Casual Versatility</p>
+                    <p class="text-slate-600 leading-relaxed">As highlighted in <span class="font-semibold italic">Olive Green Single-Breasted Blazer</span>, our olive-toned blazer offers a relaxed yet sharp aesthetic. It’s the perfect transition piece from a casual daytime event to a sophisticated evening gathering.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offers Section -->
+    <!-- Offers & Loyalty Section -->
+    <section id="offers" class="py-20 bg-slate-900 text-white overflow-hidden relative">
+        <div class="container mx-auto px-6 text-center">
+            
+            <!-- Headline -->
+            <h2 class="serif text-4xl md:text-6xl mb-4">Premium Style, <span class="text-gold">Better Prices</span></h2>
+            <p class="text-lg md:text-xl text-slate-300 mb-12 max-w-2xl mx-auto">
+                Whether you are buying one suit or 100, we offer the best deals in Delhi for both single shoppers and wholesale business owners.
+            </p>
+
+            <!-- Loyalty Points Box -->
+            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                
+                <!-- Loyalty Points Info -->
+                <div class="bg-slate-800/50 p-8 rounded-2xl border border-gold/30 flex flex-col items-center justify-center">
+                    <div class="w-16 h-16 bg-gold rounded-full flex items-center justify-center mb-4 shadow-lg">
+                        <i class="fas fa-gift text-slate-900 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Earn Loyalty Points</h3>
+                    <p class="text-slate-400">
+                        Shop with us today and earn points on every purchase. Use these points as a <span class="text-white font-bold underline">Cash Discount</span> on your next visit!
+                    </p>
+                    <span class="mt-4 text-xs uppercase tracking-widest text-gold font-bold">Buy More • Save More</span>
+                </div>
+
+                <!-- Wholesale Deal Info -->
+                <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 flex flex-col items-center justify-center">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-4 shadow-lg">
+                        <i class="fas fa-tags text-slate-900 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Wholesale Rates</h3>
+                    <p class="text-slate-400">
+                        Running a shop? Get our premium collection at factory prices. We offer special low rates for bulk orders and business partners.
+                    </p>
+                    <span class="mt-4 text-xs uppercase tracking-widest text-slate-300 font-bold">Delhi's Trusted Supplier</span>
+                </div>
+
+            </div>
+
+            <!-- WhatsApp Enquiry Button -->
+            <div class="flex flex-col items-center">
+                <p class="mb-6 text-slate-300 italic font-medium">Interested in a design? Ask us for the price on WhatsApp:</p>
+                
+                <a href="https://wa.me/919310480772?text=Hello%20Golden%20Tree%20Garments,%20I%20want%20to%20know%20more%20about%20your%20offers%20and%20latest%20prices." 
+                   target="_blank" 
+                   class="inline-flex items-center gap-4 bg-[#25D366] hover:bg-[#20ba5a] text-white px-10 py-5 rounded-full font-bold text-lg transition-all shadow-2xl hover:scale-105 active:scale-95">
+                    <i class="fab fa-whatsapp text-3xl"></i>
+                    <span>GET PRICE ENQUIRY NOW</span>
+                </a>
+                
+                <!-- <p class="mt-4 text-sm text-slate-500">Fast response • Available 10 AM to 8 PM</p> -->
+            </div>
+
+        </div>
+
+        <!-- Decorative background elements -->
+        <div class="absolute top-0 left-0 w-64 h-64 bg-gold/5 rounded-full -translate-x-1/2 -translate-y-1/2 blur-3xl"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-gold/5 rounded-full translate-x-1/3 translate-y-1/3 blur-3xl"></div>
+    </section>
+
+    <!-- About Section / Milestone -->
+    <section id="about" class="py-24 bg-gray-50">
+        <div class="container mx-auto px-6 flex flex-wrap items-center">
+            <div class="w-full md:w-1/2 mb-12 md:mb-0">
+                <div class="relative pr-10 pb-10">
+                    <img src="img2.jpg" alt="Golden Tree Legacy" class="rounded-2xl shadow-2xl w-full">
+                    <div class="absolute bottom-0 right-0 gold-gradient p-10 shadow-2xl rounded-2xl text-white text-center">
+                        <p class="text-5xl font-bold">06</p>
+                        <p class="text-xs uppercase tracking-widest">Years of Excellence</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 md:pl-20">
+                <span class="text-gold font-bold uppercase text-xs tracking-widest mb-4 block">A Journey of Style</span>
+                <h2 class="serif text-5xl mb-8 leading-tight">Celebrating 6 Years <br>on 10th April 2026</h2>
+                <p class="text-slate-700 text-lg mb-6 leading-relaxed">
+    We have some great news! <strong>Golden Tree Garments has just completed 6 successful years</strong> on 10th April 2026. Since we started our journey in 2020, we have worked hard to become Delhi’s favorite place for men who want to look their best.
+</p>
+
+<p class="text-slate-700 text-lg mb-8 leading-relaxed">
+    Over the last 6 years, we have helped thousands of customers find the perfect outfit for weddings, important office meetings, and special parties. We are proud to provide high-quality fashion that fits perfectly and stays within your budget.
+</p>
+                <p class="text-slate-600 text-lg mb-8 leading-relaxed">
+                    Our commitment remains the same: high-quality fabrics, impeccable tailoring, and a personal touch that makes every customer feel like royalty.
+                </p>
+                <div class="flex items-center gap-6">
+                    <div class="h-[2px] w-16 bg-gold"></div>
+                    <p class="serif italic text-xl">The Golden Tree Legacy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-white pt-20 pb-10 border-t-2 border-gold/30">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 mb-16">
+                <!-- Brand Info -->
+                <div>
+                    <h3 class="serif text-3xl mb-6 font-bold">GOLDEN <span class="text-gold">TREE</span></h3>
+                    <p class="text-slate-400 mb-8 max-w-md leading-relaxed">Delhi's premier clothing atelier. We specialize in high-quality Blazers, Sherwanis, Suits, and Indo-Western attire for the modern man.</p>
+                    <div class="flex space-x-6">
+                        <a href="https://www.facebook.com/GoldenTreeGarments/" class="text-slate-400 hover:text-gold text-2xl transition"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/goldentree_garments/" class="text-slate-400 hover:text-gold text-2xl transition"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Contact Info (Address triggers Map) -->
+                <div>
+                    <h4 class="font-bold uppercase tracking-widest text-sm mb-8 text-gold">Visit Our Store</h4>
+                    <div class="space-y-6">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Plot+No+447+Jheel+Khureja+Delhi+110051" target="_blank" class="flex items-start gap-4 group">
+                            <i class="fas fa-map-marker-alt mt-1 text-gold group-hover:scale-110 transition"></i>
+                            <span class="text-slate-400 group-hover:text-white transition leading-relaxed">
+                                <strong class="text-white block mb-1 uppercase text-xs tracking-widest">Main Address</strong>
+                                Plot No 447, Jheel Khureja,<br>
+                                Near Tanga Stand, Delhi 110051
+                                <span class="block mt-2 text-gold underline text-xs">Click to view on Google Maps</span>
+                            </span>
+                        </a>
+                        <a href="tel:09310480772" class="flex items-center gap-4 group">
+                            <i class="fas fa-phone-alt text-gold group-hover:scale-110 transition"></i>
+                            <span class="text-2xl font-bold group-hover:text-gold transition tracking-tighter">093104 80772</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-900 pt-8 text-center">
+                <p class="text-slate-500 text-xs uppercase tracking-widest">&copy; 2026 Golden Tree Garments. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
