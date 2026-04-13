@@ -298,21 +298,20 @@
 </footer>
 
 <!-- FULL PAGE DIGITAL CARD MODAL -->
-<div id="digitalCardModal" class="fixed inset-0 z-[100] hidden flex items-center justify-center bg-slate-950/98 backdrop-blur-xl p-0 md:p-6 transition-all duration-500">
+<div id="digitalCardModal" class="fixed inset-0 z-[100] hidden flex items-center justify-center bg-slate-950/98 backdrop-blur-xl p-0 transition-all duration-500">
     
-    <!-- Professional Close Button (Pinned to Top Right) -->
+    <!-- Professional Close Button -->
     <button onclick="closeCardModal()" class="absolute top-6 right-6 z-[120] w-12 h-12 flex items-center justify-center bg-black/10 hover:bg-gold text-white hover:text-slate-950 rounded-full transition-all duration-300 shadow-2xl group">
         <i class="fas fa-times text-xl group-hover:rotate-90 transition-transform"></i>
     </button>
 
-    <!-- Card Wrapper -->
-    <div class="relative w-full h-full max-w-4xl flex items-center justify-center scale-95 opacity-0 transition-all duration-500" id="modalContainer">
-        <!-- iframe loads Digital.html - scrolling="no" hides browser bars -->
+    <!-- Modal Container: Full width on mobile, max-md on desktop -->
+    <div id="modalContainer" class="w-full h-full md:max-w-md flex items-center justify-center scale-95 opacity-0 transition-all duration-500">
+        <!-- scrolling="yes" allowed for mobile if content is long, but hidden via CSS -->
         <iframe 
             src="Digital.html" 
             id="digitalFrame"
-            scrolling="no" 
-            class="w-full h-full border-none shadow-[0_0_80px_rgba(212,175,55,0.2)] rounded-none md:rounded-[40px] bg-transparent">
+            class="w-full h-full border-none bg-transparent">
         </iframe>
     </div>
 </div>
@@ -367,6 +366,7 @@
         }
     });
 </script>
+
 
 </body>
 </html>
