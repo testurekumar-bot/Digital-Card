@@ -246,8 +246,10 @@
     <!-- Footer -->
 <footer class="bg-slate-950 text-white pt-20 pb-10 border-t-2 border-gold/30 overflow-hidden">
     <div class="container mx-auto px-6">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 mb-16">
-            <!-- Brand Info -->
+        <!-- Main Grid: Changed to 3 columns on large screens -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mb-16">
+            
+            <!-- 1. Brand Info -->
             <div>
                 <h3 class="serif text-3xl mb-6 font-bold">GOLDEN <span class="text-gold">TREE</span></h3>
                 <p class="text-slate-400 mb-8 max-w-md leading-relaxed">Delhi's premier clothing atelier. We specialize in high-quality Blazers, Sherwanis, Suits, and Indo-Western attire for the modern man.</p>
@@ -257,11 +259,11 @@
                 </div>
             </div>
 
-            <!-- Contact Info -->
+            <!-- 2. Contact Info -->
             <div>
                 <h4 class="font-bold uppercase tracking-widest text-sm mb-8 text-gold">Visit Our Store</h4>
                 <div class="space-y-6">
-                    <a href="https://www.google.com/maps/place/Golden+Tree+Garments+-+Men%E2%80%99s+Clothing+Shop+%26+Coat+Pant,+Blazer+For+Men/@28.657421,77.2727203,21z/data=!4m6!3m5!1s0x390cfd3321fe2743:0xe98c382c1fa3dc76!8m2!3d28.6573924!4d77.2728699!16s%2Fg%2F11lfk_s9gw?entry=ttu&g_ep=EgoyMDI2MDQwOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="flex items-start gap-4 group">
+                    <a href="https://www.google.com/maps/place/Golden+Tree+Garments+..." target="_blank" class="flex items-start gap-4 group">
                         <i class="fas fa-map-marker-alt mt-1 text-gold group-hover:scale-110 transition"></i>
                         <span class="text-slate-400 group-hover:text-white transition leading-relaxed">
                             <strong class="text-white block mb-1 uppercase text-xs tracking-widest">Main Address</strong>
@@ -276,6 +278,30 @@
                     </a>
                 </div>
             </div>
+
+            <!-- 3. Business Hours (Right Side) -->
+            <div class="lg:border-l lg:border-slate-800 lg:pl-16">
+                <h4 class="font-bold uppercase tracking-widest text-sm mb-8 text-gold">Business Hours</h4>
+                <div class="space-y-4">
+                    <div class="flex items-center justify-between text-slate-400 border-b border-slate-900 pb-2">
+                        <span>Monday - Sunday</span>
+                        <span class="text-white">9:00 AM - 8:00 PM</span>
+                    </div>
+                    
+                    <!-- Live Status Indicator -->
+                    <div id="status-container" class="mt-6 flex items-center gap-3 bg-slate-900/50 p-4 rounded-lg border border-slate-800">
+                        <div class="relative flex h-3 w-3">
+                            <span id="status-ping" class="animate-ping absolute inline-flex h-full w-full rounded-full opacity-75"></span>
+                            <span id="status-dot" class="relative inline-flex rounded-full h-3 w-3"></span>
+                        </div>
+                        <div>
+                            <p id="status-text" class="text-xs uppercase tracking-widest font-bold"></p>
+                            <p id="ist-time" class="text-[10px] text-slate-500 mt-1"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
         <!-- Digital E-Card Section -->
@@ -287,9 +313,9 @@
                 <i class="fas fa-id-badge text-gold group-hover:rotate-12 transition-transform"></i>
             </button>
         </div>
-        
+
         <!-- Updated Copyright Section -->
-        <div class="pt-8 text-center">
+        <div class="pt-8 text-center border-t border-slate-900">
             <p class="text-slate-600 text-[10px] uppercase tracking-widest">
                 &copy; 2026 Golden Tree Garments. All Rights Reserved By Krishna Dua
             </p>
@@ -365,6 +391,47 @@
             closeCardModal();
         }
     });
+
+    function updateStoreStatus() {
+        // Get current time in Indian Standard Time (IST)
+        const now = new Date();
+        const options = { timeZone: 'Asia/Kolkata', hour: 'numeric', minute: 'numeric', hour12: false };
+        const istTimeString = new Intl.DateTimeFormat('en-US', options).format(now);
+        const [hour, minute] = istTimeString.split(':').map(Number);
+        
+        // Formatting for display
+        const displayOptions = { timeZone: 'Asia/Kolkata', hour: 'numeric', minute: 'numeric', hour12: true };
+        const formattedIST = new Intl.DateTimeFormat('en-US', displayOptions).format(now);
+
+        const statusPing = document.getElementById('status-ping');
+        const statusDot = document.getElementById('status-dot');
+        const statusText = document.getElementById('status-text');
+        const istDisplay = document.getElementById('ist-time');
+
+        // Logic: 9:00 AM (9) to 8:00 PM (20)
+        const isOpen = hour >= 9 && hour < 20;
+
+        if (isOpen) {
+            statusPing.classList.add('bg-green-500');
+            statusDot.classList.add('bg-green-500');
+            statusPing.classList.remove('bg-red-500');
+            statusDot.classList.remove('bg-red-500');
+            statusText.innerText = "Open Now";
+            statusText.className = "text-xs uppercase tracking-widest font-bold text-green-500";
+        } else {
+            statusPing.classList.remove('animate-ping', 'bg-green-500'); // No ping animation if closed
+            statusDot.classList.add('bg-red-500');
+            statusText.innerText = "Closed Now";
+            statusText.className = "text-xs uppercase tracking-widest font-bold text-red-500";
+        }
+
+        istDisplay.innerText = "Current Time in Delhi: " + formattedIST;
+    }
+
+    // Run on load and every minute
+    updateStoreStatus();
+    setInterval(updateStoreStatus, 60000);
+
 </script>
 
 </body>
